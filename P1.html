@@ -301,8 +301,9 @@ non-null and is not a goal node, says to</li>
 <p>Used by method 2 to check, at every node, whether there is an adjacent node already colored with the given color.</p>
 <h4>int[] nextRowAndColumn(int row, int column)</h4>
 <p> Used by both methods to find the next "country" (actually, the row and column of the next square on the checkerboard).</p>
-<p>Here's the code for method 1:</p
-<pre style="color: cornflowerblue ;">
+<p>Here's the code for method 1:</p>
+<pre style="color: cornflowerblue; 
+            font-size:13px ;">
    boolean explore1(int row, int column, int color) {
     if (row >= NUM_ROWS)return 
     mapIsOK(); map[row][column] = color; 
@@ -313,6 +314,7 @@ non-null and is not a goal node, says to</li>
    return false; 
 }
 </pre>
+
 <p>And here's the code for method 2:</p>
 <pre style="color: cornflowerblue; 
             font-size:13px ;">
@@ -493,7 +495,8 @@ non-null and is not a goal node, says to</li>
      However, Java programmers don't always realize that you can create an Exception without throwing it. For example, the following<br> 
      code</p>
 
-<pre>
+<pre style="color:cornflowerblue;
+            font-size: 13px;">
    new Exception("Checkpoint Charlie").printStackTrace(System.out);
 </pre>
 
@@ -516,8 +519,8 @@ non-null and is not a goal node, says to</li>
      of white marbles, and you have a playing board which consists simply of a line of 2n+1 spaces to put the marbles in. Start with<br> 
      the black marbles all at one end (say, the left), the white marbles all at the other end, and a free space in between.</p>
 
-<table align="center"  border="1"  cellpadding="8"   cellspacing="0";
-        style=" background-color: #D8D8D8";>
+<table   border="1"  cellpadding="8"   cellspacing="0";
+        style=" background-color: #D8D8D8;  margin:auto;">
       <td><img src="./black.png" alt="blackball"></td>
       <td><img src="./black.png" alt="blackball"></td>
       <td width="50px"></td>
@@ -528,8 +531,8 @@ non-null and is not a goal node, says to</li>
 
  <p> The goal is to reverse the positions of the marbles:</p>
 
- <table align="center" border="1" cellpadding="8"  cellspacing="0"
-        style=" background-color: #D8D8D8";>
+ <table border="1" cellpadding="8"  cellspacing="0"
+        style=" background-color: #D8D8D8; margin: auto;">
      <tr>
       <td><img src="./white.png" alt="whiteball"></td>
       <td><img src="./white.png" alt="whiteball"></td>
@@ -549,7 +552,8 @@ non-null and is not a goal node, says to</li>
 
  <p>For example, you could make the following sequence of moves:</p>
 
-<table align="centre" border="0" cellpadding="8"  cellspacing="0">
+<table  border="0" cellpadding="8"  cellspacing="0"
+style="margin:auto ;">
    <tr>
       <td><b>Starting Position:</b></td>
       <td>
